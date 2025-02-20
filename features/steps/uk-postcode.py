@@ -24,3 +24,8 @@ def step_impl(context):
 @then(u'I can see the administrative district is "{admin_district}"')
 def step_impl(context, admin_district):
     assert admin_district == context.search_result
+
+
+@then('I will see an message containing the error "{error_message}"')
+def step_impl(context, error_message):
+    assert context.search_result == error_message

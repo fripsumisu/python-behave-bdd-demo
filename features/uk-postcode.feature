@@ -8,3 +8,8 @@ Feature: Searching postcode locations
     Given a postcode value of "SW1A 2AA"
     When I query the postcode service
     Then I can see the administrative district is "Westminster"
+
+  Scenario: Searching for an invalid postcode
+    Given a postcode value of "No Such Postcode"
+    When I query the postcode service
+    Then I will see an message containing the error "Invalid postcode"

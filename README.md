@@ -5,6 +5,7 @@ For more information concerning _Behaviour Driven Development_ (BDD) take a read
 ## The Initial Requirement
 Imagine a simple requirement to look up and check whether a _string_ represents a valid UK postal code and to see what administrative unit in the UK that postcode falls within.
 The very simple behaviour of the postcode look-up is described in the [uk-postcode.feature](features/uk-postcode.feature) file written in [Gherkin](https://cucumber.io/docs/gherkin/reference) style natural language.
+The underlying REST API to be wrapped by this simple example is to be found at [postcodes.io](https://postcodes.io/docs)
 
 ## Behaviour Driven
 Note the atomic commits to this repo.  The initial commit started with describing the initial behaviour, implementing a test for that behaviour in some _step definitions_ and having that call a very simple stub before actually writing any application code.
