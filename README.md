@@ -24,8 +24,6 @@ Run ```behave```
 $ behave
 ...
 2 features passed, 0 failed, 0 skipped
-3 scenarios passed, 0 failed, 0 skipped
-9 steps passed, 0 failed, 0 skipped, 0 undefined
-Took 0m0.007s
-
+8 scenarios passed, 0 failed, 0 skipped
+24 steps passed, 0 failed, 0 skipped, 0 undefined
 ```

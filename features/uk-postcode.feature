@@ -13,3 +13,15 @@ Feature: Searching postcode locations
     Given a postcode value of "No Such Postcode"
     When I query the postcode service
     Then I will see an message containing the error "Invalid postcode"
+
+  Scenario Outline: Scenario outline demonstrating verifying behaviour with a collection of inputs
+    Given a postcode value of <postcode>
+    When I query the postcode service
+    Then I can see the administrative district is <admin_district>
+
+    Examples: Capital cities
+      | postcode  | admin_district |
+      | BT1 5GS   | Belfast        |
+      | CF99 1SN  | Cardiff        |
+      | EH8 8DX   | Edinburgh      |
+      | SW1A 2AA  | Westminster    |
